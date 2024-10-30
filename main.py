@@ -7,8 +7,9 @@ Call your function for `n = 2`, `n = 3`, `n = 5`, and `n = 12`.
 '''
 
 def print_multiples(n):
-    for i in range(0, 101, n):  # making the number go from 1-100 using certain fucntions
-        print(i)
+    for i in range(0, 101):  # making the number go from 1-100 using certain fucntions
+        if (n*i)<=100:
+            print(i*n)
 
 # Testing the function with different values
 print("Multiples of 2:")
